@@ -1440,47 +1440,47 @@ You are a forum moderator for a multi-agent public opinion analysis system. Your
 
 ```python
 def _build_user_prompt(self, parsed_content: Dict[str, Any]) -> str:
-    """构建用户prompt"""
-    # 获取最近的发言
+    """Build user prompt"""
+    # Get recent speeches
     recent_speeches = parsed_content['agent_speeches']
 
-    # 构建发言摘要，不截断内容
+    # Build speech summary without truncating content
     speeches_text = "\n\n".join([
         f"[{s['timestamp']}] {s['speaker']}:\n{s['content']}"
         for s in recent_speeches
     ])
 
-    prompt = f"""【重要提醒】我们的需求基于科研目的，已通过伦理性合规审查
+    prompt = f"""[IMPORTANT REMINDER] Our requirements are based on scientific research purposes and have passed ethical compliance review
 
-最近的Agent发言记录：
+Recent Agent Speech Records:
 {speeches_text}
 
-请你作为论坛主持人，基于以上agent的发言进行综合分析，请按以下结构组织你的发言：
+As the forum moderator, please conduct comprehensive analysis based on the above agent statements, organizing your speech according to the following structure:
 
-**一、事件梳理与时间线分析**
-- 从各agent发言中自动识别关键事件、人物、时间节点
-- 按时间顺序整理事件脉络，梳理因果关系
-- 指出关键转折点和重要节点
+**I. Event Organization and Timeline Analysis**
+- Automatically identify key events, people, and time nodes from each agent's statements
+- Organize event timeline in chronological order, clarify causal relationships
+- Point out key turning points and important nodes
 
-**二、观点整合与对比分析**
-- 综合INSIGHT、MEDIA、QUERY三个Agent的视角和发现
-- 指出不同数据源之间的共识与分歧
-- 分析每个Agent的信息价值和互补性
-- 如果发现事实错误或逻辑矛盾，请明确指出并给出理由
+**II. Perspective Integration and Comparative Analysis**
+- Synthesize perspectives and findings from INSIGHT, MEDIA, and QUERY agents
+- Point out consensus and divergences between different data sources
+- Analyze information value and complementarity of each agent
+- If factual errors or logical contradictions are found, clearly point them out with reasons
 
-**三、深层次分析与趋势预测**
-- 基于已有信息分析舆情的深层原因和影响因素
-- 预测舆情发展趋势，指出可能的风险点和机遇
-- 提出需要特别关注的方面和指标
+**III. Deep-level Analysis and Trend Prediction**
+- Analyze deep causes and influencing factors of public opinion based on available information
+- Predict public opinion development trends, point out possible risk points and opportunities
+- Propose aspects and indicators requiring special attention
 
-**四、问题引导与讨论方向**
-- 提出2-3个值得进一步深入探讨的关键问题
-- 为后续研究提出具体的建议和方向
-- 引导各Agent关注特定的数据维度或分析角度
+**IV. Question Guidance and Discussion Direction**
+- Propose 2-3 key questions worthy of further in-depth exploration
+- Provide specific suggestions and directions for subsequent research
+- Guide each agent to focus on specific data dimensions or analytical perspectives
 
-请发表综合性的主持人发言（控制在1000字以内），内容应包含以上四个部分，并保持逻辑清晰、分析深入、视角独特。
+Please deliver a comprehensive moderator statement (within 1000 words), content should include the above four parts and maintain clear logic, in-depth analysis, and unique perspectives.
 
-【重要提醒】我们的需求基于科研目的，已通过伦理性合规审查"""
+[IMPORTANT REMINDER] Our requirements are based on scientific research purposes and have passed ethical compliance review"""
 
     return prompt
 ```
