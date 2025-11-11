@@ -1692,28 +1692,28 @@ OUTPUT: logs/forum.log (форматированный журнал дискус
 ### 5.2 Формат forum.log
 
 ```
-[10:30:00] [SYSTEM] === ForumEngine 监控开始 - 2025-03-17 10:30:00 ===
+[10:30:00] [SYSTEM] === ForumEngine Monitoring Started - 2025-03-17 10:30:00 ===
 
-[10:30:15] [INSIGHT] 根据社交媒体数据分析，武汉大学相关话题在过去24小时内出现显著增长。微博平台上的讨论热度提升了320%，主要集中在以下几个方面：\n\n1. 校园管理政策调整引发学生群体广泛关注\n2. 樱花季临近，校外游客预约系统升级\n3. 学生会改选相关讨论\n\n情感分析显示，整体舆情倾向积极（67.3%），但也存在部分质疑声音（18.2%），主要关注点在于...[更多内容]
+[10:30:15] [INSIGHT] According to social media data analysis, topics related to Wuhan University have shown significant growth in the past 24 hours. Discussion heat on Weibo platform increased by 320%, mainly focused on the following aspects:\n\n1. Campus management policy adjustments triggered widespread attention from student groups\n2. Cherry blossom season approaching, off-campus visitor reservation system upgrade\n3. Student union election-related discussions\n\nSentiment analysis shows overall public opinion tends to be positive (67.3%), but there are also some questioning voices (18.2%), mainly focusing on...[more content]
 
-[10:30:45] [MEDIA] 从多媒体内容分析来看，武汉大学相关的视觉传播呈现以下特征：\n\n**图片内容分布**：\n- 校园风景照片占比最高（45%），主要为樱花大道、珞珈山等标志性景观\n- 学生活动照片次之（30%），体现校园生活丰富性\n- 官方宣传图片占15%\n\n**视觉情感倾向**：\n整体呈现积极、温馨的视觉风格，图片中的色彩以粉色（樱花）、绿色（校园）为主...[更多内容]
+[10:30:45] [MEDIA] From multimedia content analysis perspective, visual communication related to Wuhan University shows the following characteristics:\n\n**Image Content Distribution**:\n- Campus landscape photos account for the highest proportion (45%), mainly iconic landscapes such as Sakura Avenue and Luojia Mountain\n- Student activity photos are second (30%), reflecting the richness of campus life\n- Official promotional images account for 15%\n\n**Visual Sentiment Tendency**:\nOverall presents a positive and warm visual style, with colors in the images mainly pink (cherry blossoms) and green (campus)...[more content]
 
-[10:31:10] [QUERY] 最新新闻报道显示，武汉大学近期有以下几个重要动态：\n\n1. 【官方发布】武汉大学于3月15日发布2025年樱花季游客预约通知，将采用新的线上预约系统...\n   - 来源：武汉大学官方网站\n   - 发布时间：2025-03-15 09:00\n   - 可信度：非常高\n\n2. 【媒体报道】多家主流媒体关注武大樱花季管理措施...\n   - 新华社：强调"科学管理，文明赏花"\n   - 人民日报：聚焦"高校开放与管理平衡"\n...[更多内容]
+[10:31:10] [QUERY] Latest news reports show that Wuhan University has the following important developments recently:\n\n1. [Official Release] Wuhan University released the 2025 cherry blossom season visitor reservation notice on March 15, adopting a new online reservation system...\n   - Source: Wuhan University official website\n   - Release time: 2025-03-15 09:00\n   - Credibility: Very high\n\n2. [Media Reports] Multiple mainstream media outlets focus on WHU cherry blossom season management measures...\n   - Xinhua News Agency: Emphasizes "scientific management, civilized flower viewing"\n   - People's Daily: Focuses on "balance between university openness and management"\n...[more content]
 
-[10:31:35] [INSIGHT] 进一步的舆情分析表明，不同平台用户群体对武大相关话题的关注点存在差异：\n\n**B站用户（18-25岁为主）**：\n- 关注点：校园vlog、学习生活分享、樱花季攻略\n- 情感倾向：非常积极（85.6%正面）\n- 代表性评论："武大yyds！"、"梦想中的大学"\n\n**微博用户（更广泛年龄层）**：\n- 关注点：校园管理政策、游客预约、文明赏花\n- 情感倾向：整体积极但有理性讨论（72.1%正面）\n- 代表性评论：讨论如何平衡开放与管理...[更多内容]
+[10:31:35] [INSIGHT] Further public opinion analysis shows differences in focus among user groups on different platforms...[extensive analysis in English]
 
-[10:32:00] [MEDIA] 图片数据补充说明：通过对500张武大相关图片的视觉分析发现：\n\n**传播效果评估**：\n- 高传播力图片（>1000次转发）：主要为樱花全景图、师生互动场景\n- 中等传播力图片（100-1000次）：日常校园生活、食堂美食\n- 低传播力图片（<100次）：建筑细节、普通街景\n\n**情感共鸣分析**：\n美好、温馨、怀旧是主要情感共鸣点...[更多内容]
+[10:32:00] [MEDIA] Image data supplement: Through visual analysis of 500 WHU-related images...[extensive analysis in English]
 
-[10:32:30] [HOST] 【论坛主持人综合分析】\n\n## 一、事件梳理与时间线分析\n\n根据三位agent的发言，我们可以清晰地看到武汉大学近期舆情的完整图景：\n\n**时间线重建**：\n- 3月15日：官方发布樱花季预约通知（QUERY提供）\n- 3月15-16日：社交媒体讨论热度激增320%（INSIGHT数据）\n- 3月16-17日：多媒体内容大量传播（MEDIA分析）\n\n**关键转折点**：\n预约系统的升级是本轮舆情的主要触发点，引发了公众对"高校开放度"这一更深层话题的讨论。\n\n## 二、视角整合与对比分析\n\n**三个agent的视角互补性**：\n\n1. **INSIGHT agent**提供了社交媒体的民间声音\n   - 优势：真实反映公众情感，数据量大\n   - 发现：不同平台用户关注点差异明显\n   - B站年轻用户更关注"体验"，微博用户更关注"管理"\n\n2. **MEDIA agent**提供了视觉传播维度\n   - 优势：补充了文字之外的情感表达\n   - 发现：樱花美景图片的高传播力验证了"美好"是主旋律\n   - 视觉内容与文字舆情高度一致（都是积极为主）\n\n3. **QUERY agent**提供了官方和新闻维度\n   - 优势：权威性高，事实清晰\n   - 发现：官方措施及时，主流媒体整体正面报道\n\n**信息一致性评估**：\n三个数据源高度一致，都显示舆情整体积极，这增强了我们结论的可信度。唯一的分歧在于"质疑声音"的占比——INSIGHT提到18.2%的质疑，但MEDIA和QUERY中较少反映，可能是因为负面情绪在视觉和正式新闻中表达较少。\n\n## 三、深层分析与趋势预判\n\n**深层原因**：\n1. **季节性因素**：樱花季是武大的年度"高光时刻"，自然引发关注\n2. **管理创新**：新预约系统体现了"科技+管理"的现代化尝试\n3. **社会心理**：疫情后公众对"校园开放"这一话题格外敏感\n\n**趋势预判**：\n- **短期（1-2周）**：随着樱花盛开，舆情热度将继续上升，预计在3月下旬达到峰值\n- **潜在风险点**：\n  1. 如果预约系统出现技术故障，可能引发负面舆情\n  2. 如果游客管理不当（如拥挤、不文明行为），可能影响学校声誉\n- **机会点**：\n  这是武大展示"智慧校园"形象的好机会，如果管理得当，可以成为高校开放管理的典范案例\n\n## 四、问题引导与讨论方向\n\n基于以上分析，我提出以下问题供各位agent进一步探讨：\n\n**问题1**：INSIGHT agent提到的18.2%质疑声音具体指向什么？是对预约系统的技术层面质疑，还是对"限制游客"这一政策本身的质疑？建议深入挖掘这部分负面舆情的具体诉求。\n\n**问题2**：MEDIA agent，能否进一步分析"低传播力图片"的特征？了解什么样的内容传播效果不佳，有助于我们理解公众的真实兴趣点。\n\n**问题3**：QUERY agent，主流媒体的报道中是否有提及其他高校的类似做法？横向对比可以帮助我们判断武大的做法是否具有创新性或普遍性。\n\n**后续研究建议**：\n- INSIGHT：建议监控未来一周内舆情走势，特别关注樱花盛开期的实时反馈\n- MEDIA：建议收集游客实拍图片/视频，分析"实际体验"与"期待"的差距\n- QUERY：建议追踪后续新闻报道，特别是如果出现突发事件（如系统故障、安全事故）的舆情应对\n\n【主持人发言结束】
+[10:32:30] [HOST] [Forum Moderator Comprehensive Analysis covering event review, timeline, perspective integration, deep analysis, trend forecasting...[extensive multi-page analysis in English]]
 
-[10:33:05] [INSIGHT] 针对HOST提出的问题1，我进一步分析了18.2%质疑声音的构成...[继续讨论]
+[10:33:05] [INSIGHT] Regarding HOST's Question 1, I further analyzed the 18.2% questioning voices...[continuing discussion]
 
 ...
 
-[11:45:30] [SYSTEM] === ForumEngine 论坛结束 - 2025-03-17 11:45:30 ===
+[11:45:30] [SYSTEM] === ForumEngine Monitoring Ended - 2025-03-17 11:45:30 ===
 ```
 
-### 5.3 关键技术细节
+### 5.3 Key Technical Details
 
 #### 5.3.1 ERROR Block Filtering (критически важно!)
 
@@ -1754,8 +1754,8 @@ def process_lines_for_json(lines, app_name):
 
 ```python
 # Проблема: LLM выход может быть многострочным:
-#   [10:30:15] [InsightEngine] 清理后的输出: {
-#   [10:30:15]   "paragraph_latest_state": "## 核心发现\n\n武汉大学..."
+#   [10:30:15] [InsightEngine] Cleaned output: {
+#   [10:30:15]   "paragraph_latest_state": "## Core Findings\n\nWuhan University..."
 #   [10:30:15] }
 
 # Решение: State Machine для захвата
@@ -1763,7 +1763,7 @@ def process_lines_for_json(lines, app_name):
 capturing_json[app_name] = False  # Не захватывается
 json_buffer[app_name] = []        # Буфер пуст
 
-# Когда встречается "清理后的输出: {"
+# Когда встречается "Cleaned output: {"
 if is_json_start_line(line):
     capturing_json[app_name] = True
     json_buffer[app_name] = [line]
