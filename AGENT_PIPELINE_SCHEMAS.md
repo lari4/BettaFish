@@ -623,7 +623,7 @@ OUTPUT: Новостной аналитический отчет (Markdown)
 | **Дедупликация** | ✅ Ручная (по URL) | ❌ Не нужна (API фильтрует) |
 | **Reflection Loop** | 1-3 итерации | 0 итераций (обычно) |
 | **Фокус** | Общественное мнение, эмоции | Факты, проверка, хронология |
-| **Стиль языка** | Разговорный ("武大", "火了") | Формальный, журналистский |
+| **Стиль языка** | Разговорный ("WHU", "went viral") | Формальный, журналистский |
 
 ### 2.3 Инструменты поиска QueryEngine
 
@@ -658,20 +658,20 @@ OUTPUT: Новостной аналитический отчет (Markdown)
 ### 2.4 Поток данных (пример)
 
 ```
-INPUT: "比特币价格突破10万美元"
+INPUT: "Bitcoin price breaks through $100,000"
 
 STEP 1: ReportStructureNode
 Output: [
-  {title: "价格突破与市场反应", content: "..."},
-  {title: "技术分析与历史对比", content: "..."},
-  {title: "机构投资者动向", content: "..."}
+  {title: "Price breakthrough and market reaction", content: "..."},
+  {title: "Technical analysis and historical comparison", content: "..."},
+  {title: "Institutional investor movements", content: "..."}
 ]
 
 STEP 2.1: FirstSearchNode (параграф 1)
 Output: {
   search_tool: "search_news_last_24_hours",
   search_query: "Bitcoin price 100k breakthrough",
-  reasoning: "需要最新市场反应"
+  reasoning: "Need latest market reactions"
 }
 
 STEP 2.2: TavilyNewsAgency.search_news_last_24_hours()
@@ -687,12 +687,12 @@ Output: [
 ]
 
 STEP 2.3: FirstSummaryNode
-Output: "## 核心事件概述\n\n比特币在2025年3月17日突破..." (800-1200 слов)
+Output: "## Core Event Overview\n\nBitcoin broke through on March 17, 2025..." (800-1200 слов)
 
 ... (повторить для всех параграфов)
 
 STEP 3: ReportFormattingNode
-Output: "# [深度调查] 比特币价格突破10万美元 综合新闻分析报告\n\n..." (10000+ слов)
+Output: "# [In-Depth Investigation] Bitcoin Price Breaks Through $100,000 Comprehensive News Analysis Report\n\n..." (10000+ слов)
 ```
 
 ---
