@@ -95,18 +95,18 @@ INPUT: Пользовательский запрос (query)
   │     │   │   - original_query: оригинальный запрос                │
   │     │   │                                                          │
   │     │   │ Принципы оптимизации:                                   │
-  │     │   │   ❌ "舆情" (общественное мнение)                       │
-  │     │   │   ✅ "大家怎么看" (что все думают)                      │
-  │     │   │   ❌ "传播态势" (тенденция распространения)            │
-  │     │   │   ✅ "火了" (стало горячим)                            │
+  │     │   │   ❌ "public opinion" (общественное мнение)             │
+  │     │   │   ✅ "what does everyone think" (что все думают)        │
+  │     │   │   ❌ "dissemination trend" (тенденция распространения)  │
+  │     │   │   ✅ "went viral" (стало горячим)                       │
   │     │   │                                                          │
   │     │   │ Выход (JSON):                                           │
   │     │   │   - keywords: List[str] (10-20 оптимизированных слов)  │
   │     │   │   - reasoning: обоснование выбора                      │
   │     │   │                                                          │
   │     │   │ Пример:                                                 │
-  │     │   │   Вход: "武汉大学舆情管理未来展望发展趋势"              │
-  │     │   │   Выход: ["武大", "武汉大学", "学校管理", "大学"]      │
+  │     │   │   Вход: "Wuhan University public opinion management future outlook development trends"│
+  │     │   │   Выход: ["WHU", "Wuhan University", "school management", "university"]│
   │     │   └────────────────────────────────────────────────────────┘
   │     │     │
   │     │     ▼
@@ -298,47 +298,47 @@ INPUT: Пользовательский запрос (query)
 │   объемом не менее 10 000 слов                                      │
 │                                                                       │
 │ Структура финального отчета:                                         │
-│   # [舆情洞察] {тема} 深度舆情分析报告                              │
+│   # [Public Opinion Insights] {тема} In-Depth Public Opinion Analysis Report│
 │                                                                       │
-│   ## 执行摘要 (Executive Summary)                                    │
-│   ### 核心舆情发现 (Core Findings)                                   │
-│   ### 舆情热点概览 (Hotspots Overview)                               │
+│   ## Executive Summary (Выполнительное резюме)                      │
+│   ### Core Public Opinion Findings (Ключевые находки)               │
+│   ### Public Opinion Hotspots Overview (Обзор горячих точек)        │
 │                                                                       │
 │   ## 1. [Параграф 1 Title]                                          │
-│   ### 1.1 舆情数据画像 (Data Portrait)                               │
-│   | 平台 | 参与用户 | 内容量 | 正面% | 负面% | 中性% |                │
+│   ### 1.1 Public Opinion Data Portrait (Портрет данных)            │
+│   | Platform | Participating Users | Content Volume | Positive% | Negative% | Neutral% |│
 │                                                                       │
-│   ### 1.2 代表性民众声音 (Representative Voices)                     │
-│   **支持声音 (XX%)**:                                                 │
-│   > "具体用户评论1" —— @UserA (点赞: XXXX)                           │
+│   ### 1.2 Representative Public Voices (Репрезентативные голоса)   │
+│   **Supporting Voices (XX%)**:                                       │
+│   > "Specific user comment 1" —— @UserA (likes: XXXX)               │
 │                                                                       │
-│   **反对声音 (XX%)**:                                                 │
-│   > "具体用户评论2" —— @UserB (评论: XXXX)                           │
+│   **Opposing Voices (XX%)**:                                         │
+│   > "Specific user comment 2" —— @UserB (comments: XXXX)            │
 │                                                                       │
-│   ### 1.3 深度舆情解读 (Deep Interpretation)                         │
-│   ### 1.4 情感演变轨迹 (Sentiment Evolution)                         │
+│   ### 1.3 Deep Public Opinion Interpretation (Глубокая интерпретация)│
+│   ### 1.4 Sentiment Evolution Trajectory (Траектория эволюции эмоций)│
 │                                                                       │
 │   ... (для каждого из 5 параграфов)                                 │
 │                                                                       │
-│   ## 综合舆情态势分析 (Comprehensive Analysis)                       │
-│   ### 整体舆情倾向                                                    │
-│   ### 不同群体意见对比                                                │
-│   ### 平台差异化分析                                                  │
-│   ### 舆情发展预判                                                    │
+│   ## Comprehensive Public Opinion Situation Analysis (Комплексный анализ)│
+│   ### Overall Public Opinion Tendencies (Общие тенденции)           │
+│   ### Comparison of Different Group Opinions (Сравнение мнений групп)│
+│   ### Platform Differentiation Analysis (Анализ по платформам)      │
+│   ### Public Opinion Development Forecast (Прогноз развития)        │
 │                                                                       │
-│   ## 深度洞察与建议 (Deep Insights)                                  │
-│   ### 社会心理分析                                                    │
-│   ### 舆情管理建议                                                    │
+│   ## Deep Insights and Recommendations (Глубокие инсайты и рекомендации)│
+│   ### Social Psychology Analysis (Социально-психологический анализ) │
+│   ### Public Opinion Management Recommendations (Рекомендации по управлению)│
 │                                                                       │
-│   ## 数据附录 (Data Appendix)                                        │
-│   ### 关键舆情指标汇总                                                │
-│   ### 重要用户评论集锦                                                │
-│   ### 详细情感分析数据                                                │
+│   ## Data Appendix (Приложение данных)                              │
+│   ### Key Public Opinion Indicators Summary (Сводка ключевых показателей)│
+│   ### Important User Comments Collection (Коллекция важных комментариев)│
+│   ### Detailed Sentiment Analysis Data (Детальные данные анализа эмоций)│
 │                                                                       │
 │ Специальные требования:                                             │
 │   - Эмоциональная визуализация (😊 😡 😢 🤔)                        │
-│   - Цветовые концепции ("红色警戒区", "绿色安全区")                  │
-│   - Температурные метафоры ("沸腾", "升温", "降温")                  │
+│   - Цветовые концепции ("red alert zone", "green safe zone")        │
+│   - Температурные метафоры ("boiling", "heating up", "cooling down")│
 │   - Обширное цитирование пользовательских голосов                    │
 │   - Таблицы сравнения мнений                                         │
 │   - Социально-психологические инсайты                                │
@@ -371,15 +371,15 @@ OUTPUT: Markdown отчет объемом 10 000+ слов
 
 PROMPT 1: SYSTEM_PROMPT_REPORT_STRUCTURE
 ├─ Вход:
-│  └─ query: "武汉大学舆情分析"
+│  └─ query: "Wuhan University public opinion analysis"
 │
 └─ Выход → State.paragraphs (список параграфов)
    ├─ paragraphs[0]:
-   │  ├─ title: "事件背景与概况"
-   │  └─ content: "全面回顾事件起因、发展脉络、关键节点"
+   │  ├─ title: "Event Background and Overview"
+   │  └─ content: "Comprehensive review of event origins, development trajectory, key milestones"
    ├─ paragraphs[1]:
-   │  ├─ title: "舆情热度与传播分析"
-   │  └─ content: "数据统计、平台分布、传播路径、影响范围"
+   │  ├─ title: "Public Opinion Heat and Dissemination Analysis"
+   │  └─ content: "Data statistics, platform distribution, propagation paths, scope of influence"
    ... (5 параграфов)
 
 ──────────────────────────────────────────────────────────────────────
@@ -393,34 +393,34 @@ PROMPT 1: SYSTEM_PROMPT_REPORT_STRUCTURE
   │
   └─ Выход → search_config
      ├─ search_tool: "search_topic_globally"
-     ├─ search_query: "武大学生怎么看"
-     ├─ reasoning: "使用全局搜索获取多平台用户声音"
+     ├─ search_query: "What do WHU students think"
+     ├─ reasoning: "Use global search to capture multi-platform user voices"
      └─ параметры: {}
 
   ────────────────────────────────────────────────────────────────────
 
   TOOL: KeywordOptimizer
   ├─ Вход:
-  │  └─ original_query: "武大学生怎么看"
+  │  └─ original_query: "What do WHU students think"
   │
   └─ Выход → optimized_keywords
-     ├─ keywords: ["武大", "武汉大学", "武大学生", "珞珈山", "樱花大道"]
-     └─ reasoning: "使用学生常用简称和地标名称"
+     ├─ keywords: ["WHU", "Wuhan University", "WHU students", "Luojia Mountain", "Sakura Avenue"]
+     └─ reasoning: "Use student common abbreviations and landmark names"
 
   ────────────────────────────────────────────────────────────────────
 
   TOOL: MediaCrawlerDB (для каждого keyword)
   ├─ Вход:
   │  ├─ tool_name: "search_topic_globally"
-  │  ├─ topic: "武大" (первое ключевое слово)
+  │  ├─ topic: "WHU" (первое ключевое слово)
   │  └─ limit_per_table: config.DEFAULT_SEARCH_TOPIC_GLOBALLY_LIMIT_PER_TABLE
   │
   └─ Выход → DBResponse
      ├─ results: [
      │    {
-     │      title_or_content: "武大真的太美了！樱花季必打卡",
+     │      title_or_content: "WHU is really so beautiful! Cherry blossom season is a must-visit",
      │      platform: "xiaohongshu",
-     │      author_nickname: "小红书用户123",
+     │      author_nickname: "Xiaohongshu User 123",
      │      publish_time: "2025-03-15T10:30:00",
      │      url: "https://...",
      │      hotness_score: 8542,
@@ -454,19 +454,19 @@ PROMPT 1: SYSTEM_PROMPT_REPORT_STRUCTURE
   ├─ Вход:
   │  ├─ title: paragraphs[i].title
   │  ├─ content: paragraphs[i].content
-  │  ├─ search_query: "武大学生怎么看"
+  │  ├─ search_query: "What do WHU students think"
   │  └─ search_results: форматированные результаты + sentiment_analysis
-  │     └─ "1. [xiaohongshu] 武大真的太美了！... (情感: 非常正面, 置信度: 0.95)"
-  │         "2. [bilibili] 武大YYDS！... (情感: 正面, 置信度: 0.89)"
+  │     └─ "1. [xiaohongshu] WHU is really so beautiful!... (sentiment: very positive, confidence: 0.95)"
+  │         "2. [bilibili] WHU YYDS!... (sentiment: positive, confidence: 0.89)"
   │         ...
-  │         "情感分析汇总:"
-  │         "  - 正面情绪: 66.7% (100条)"
-  │         "  - 负面情绪: 13.3% (20条)"
-  │         "  - 中性情绪: 20% (30条)"
-  │         "  - 主导情绪: 正面"
+  │         "Sentiment Analysis Summary:"
+  │         "  - Positive sentiment: 66.7% (100 items)"
+  │         "  - Negative sentiment: 13.3% (20 items)"
+  │         "  - Neutral sentiment: 20% (30 items)"
+  │         "  - Dominant sentiment: positive"
   │
   └─ Выход → summary (800-1200 слов)
-     ├─ paragraph_latest_state: "## 核心发现\n\n武汉大学..."
+     ├─ paragraph_latest_state: "## Core Findings\n\nWuhan University..."
      └─ (сохраняется в State.paragraphs[i].research.latest_summary)
 
   ════════════════════════════════════════════════════════════════════
@@ -480,17 +480,17 @@ PROMPT 1: SYSTEM_PROMPT_REPORT_STRUCTURE
   │  └─ paragraph_latest_state: предыдущий summary (800-1200 слов)
   │
   ├─ Анализирует пробелы:
-  │  ├─ "缺少bilibili平台年轻用户的观点"
-  │  ├─ "需要补充近一周内的最新评论"
-  │  └─ "应该增加更多学生的真实情感表达"
+  │  ├─ "Missing young users' opinions from bilibili platform"
+  │  ├─ "Need to supplement latest comments from the past week"
+  │  └─ "Should add more authentic emotional expressions from students"
   │
   └─ Выход → reflection_config
      ├─ search_tool: "search_topic_on_platform"
-     ├─ search_query: "武大vlog" (更разговорный запрос!)
+     ├─ search_query: "WHU vlog" (more conversational query!)
      ├─ platform: "bilibili"
      ├─ start_date: "2025-03-10"
      ├─ end_date: "2025-03-17"
-     └─ reasoning: "需要补充B站年轻群体的视频评论"
+     └─ reasoning: "Need to supplement video comments from young Bilibili community"
 
   ────────────────────────────────────────────────────────────────────
 
@@ -503,7 +503,7 @@ PROMPT 1: SYSTEM_PROMPT_REPORT_STRUCTURE
   ├─ Вход:
   │  ├─ title: paragraphs[i].title
   │  ├─ content: paragraphs[i].content
-  │  ├─ search_query: "武大vlog"
+  │  ├─ search_query: "WHU vlog"
   │  ├─ search_results: новые результаты с Bilibili + sentiment
   │  └─ paragraph_latest_state: предыдущая версия (800-1200 слов)
   │
@@ -514,7 +514,7 @@ PROMPT 1: SYSTEM_PROMPT_REPORT_STRUCTURE
   │  └─ Обновить эмоциональный анализ
   │
   └─ Выход → enriched_summary (1000-1500 слов)
-     ├─ updated_paragraph_latest_state: "## 核心发现（更新版）\n\n..."
+     ├─ updated_paragraph_latest_state: "## Core Findings (Updated Version)\n\n..."
      └─ (обновляет State.paragraphs[i].research.latest_summary)
 
 ──────────────────────────────────────────────────────────────────────
@@ -535,12 +535,12 @@ PROMPT 6: SYSTEM_PROMPT_REPORT_FORMATTING
 │  ├─ Добавить Executive Summary
 │  ├─ Создать таблицы данных
 │  ├─ Добавить эмоциональную визуализацию
-│  ├─ Написать综合分析 (комплексный анализ)
-│  ├─ Создать раздел深度洞察 (глубокие инсайты)
-│  └─ Добавить数据附录 (приложение данных)
+│  ├─ Написать comprehensive analysis (комплексный анализ)
+│  ├─ Создать раздел deep insights (глубокие инсайты)
+│  └─ Добавить data appendix (приложение данных)
 │
 └─ Выход → final_report (10 000+ слов)
-   └─ "# [舆情洞察] 武汉大学 深度舆情分析报告\n\n## 执行摘要\n\n..."
+   └─ "# [Public Opinion Insights] Wuhan University In-Depth Public Opinion Analysis Report\n\n## Executive Summary\n\n..."
 ```
 
 ### 1.3 Конфигурационные параметры
@@ -623,7 +623,7 @@ OUTPUT: Новостной аналитический отчет (Markdown)
 | **Дедупликация** | ✅ Ручная (по URL) | ❌ Не нужна (API фильтрует) |
 | **Reflection Loop** | 1-3 итерации | 0 итераций (обычно) |
 | **Фокус** | Общественное мнение, эмоции | Факты, проверка, хронология |
-| **Стиль языка** | Разговорный ("武大", "火了") | Формальный, журналистский |
+| **Стиль языка** | Разговорный ("WHU", "went viral") | Формальный, журналистский |
 
 ### 2.3 Инструменты поиска QueryEngine
 
@@ -658,20 +658,20 @@ OUTPUT: Новостной аналитический отчет (Markdown)
 ### 2.4 Поток данных (пример)
 
 ```
-INPUT: "比特币价格突破10万美元"
+INPUT: "Bitcoin price breaks through $100,000"
 
 STEP 1: ReportStructureNode
 Output: [
-  {title: "价格突破与市场反应", content: "..."},
-  {title: "技术分析与历史对比", content: "..."},
-  {title: "机构投资者动向", content: "..."}
+  {title: "Price breakthrough and market reaction", content: "..."},
+  {title: "Technical analysis and historical comparison", content: "..."},
+  {title: "Institutional investor movements", content: "..."}
 ]
 
 STEP 2.1: FirstSearchNode (параграф 1)
 Output: {
   search_tool: "search_news_last_24_hours",
   search_query: "Bitcoin price 100k breakthrough",
-  reasoning: "需要最新市场反应"
+  reasoning: "Need latest market reactions"
 }
 
 STEP 2.2: TavilyNewsAgency.search_news_last_24_hours()
@@ -687,12 +687,12 @@ Output: [
 ]
 
 STEP 2.3: FirstSummaryNode
-Output: "## 核心事件概述\n\n比特币在2025年3月17日突破..." (800-1200 слов)
+Output: "## Core Event Overview\n\nBitcoin broke through on March 17, 2025..." (800-1200 слов)
 
 ... (повторить для всех параграфов)
 
 STEP 3: ReportFormattingNode
-Output: "# [深度调查] 比特币价格突破10万美元 综合新闻分析报告\n\n..." (10000+ слов)
+Output: "# [In-Depth Investigation] Bitcoin Price Breaks Through $100,000 Comprehensive News Analysis Report\n\n..." (10000+ слов)
 ```
 
 ---
@@ -824,78 +824,78 @@ PROMPT: SYSTEM_PROMPT_REPORT_FORMATTING (MediaEngine версия)
 
 Структура панорамного мультимедийного отчета:
 
-# [全景分析] {тема} 多维度整合分析报告
+# [Panoramic Analysis] {тема} Multi-Dimensional Integrated Analysis Report
 
-## 全景概览 (Panoramic Overview)
-### 多维度信息汇总
-  - 文本信息核心发现 (текстовые находки)
-  - 视觉内容关键洞察 (визуальные инсайты)
-  - 数据趋势重要指标 (тренды данных)
-  - 跨媒体关联分析 (кросс-медиа анализ)
+## Panoramic Overview (Панорамный обзор)
+### Multi-Dimensional Information Summary
+  - Core Text Information Findings (текстовые находки)
+  - Key Visual Content Insights (визуальные инсайты)
+  - Important Data Trend Indicators (тренды данных)
+  - Cross-Media Correlation Analysis (кросс-медиа анализ)
 
-### 信息来源分布图
+### Information Source Distribution Map
   | Тип информации | % |
-  | 网页文本内容    | XX% |
-  | 图片视觉信息    | XX% |
-  | 结构化数据      | XX% |
-  | AI分析洞察     | XX% |
+  | Web Text Content    | XX% |
+  | Image Visual Information    | XX% |
+  | Structured Data      | XX% |
+  | AI Analysis Insights     | XX% |
 
 ## 1. [Параграф 1]
-### 1.1 多模态信息画像
-  | 信息类型 | 数量 | 主要内容 | 情感 | 传播效果 | 影响指数 |
-  | 文本内容 | XX  | XX主题   | XX  | XX      | XX/10   |
-  | 图片内容 | XX  | XX类型   | XX  | XX      | XX/10   |
-  | 数据信息 | XX  | XX指标   | 中性 | XX      | XX/10   |
+### 1.1 Multimodal Information Portrait
+  | Information Type | Quantity | Main Content | Sentiment | Dissemination Effect | Impact Index |
+  | Text Content | XX  | XX Topic   | XX  | XX      | XX/10   |
+  | Image Content | XX  | XX Type   | XX  | XX      | XX/10   |
+  | Data Information | XX  | XX Indicator   | Neutral | XX      | XX/10   |
 
-### 1.2 深度视觉内容分析
-  **图片类型分布**:
-  - 新闻图片 (XX张): 展示事件现场，情感倾向客观中立
-    • 代表性图片: "图片描述内容..." (传播热度: ★★★★☆)
-    • 视觉冲击力: 强，主要展示XX场景
-  
-  - 用户创作 (XX张): 反映个人观点，情感表达多样
-    • 代表性图片: "图片描述内容..." (互动数据: XX赞)
-    • 创作特点: XX风格，传达XX情绪
+### 1.2 In-Depth Visual Content Analysis
+  **Image Type Distribution**:
+  - News Images (XX images): Show event scene, emotionally objective and neutral
+    • Representative image: "Image description content..." (Dissemination heat: ★★★★☆)
+    • Visual impact: Strong, mainly displays XX scene
 
-### 1.3 文本与视觉整合分析
-### 1.4 数据与内容交叉验证
+  - User-Created (XX images): Reflect personal views, diverse emotional expression
+    • Representative image: "Image description content..." (Interaction data: XX likes)
+    • Creation characteristics: XX style, conveys XX emotion
 
-## 跨媒体综合分析 (Cross-Media Analysis)
-### 信息一致性评估
-  | 维度     | 文本内容 | 图片内容 | 数据信息 | 一致性评分 |
-  | 主题焦点 | XX      | XX      | XX      | XX/10     |
-  | 情感倾向 | XX      | XX      | 中性     | XX/10     |
-  | 传播度   | XX      | XX      | XX      | XX/10     |
+### 1.3 Text and Visual Integration Analysis
+### 1.4 Data and Content Cross-Verification
 
-### 多维度影响力对比
-  **文本传播特征**:
-    - 信息密度: 高，包含大量细节和观点
-    - 理性程度: 高，逻辑性强
-    - 传播深度: 深，适合深度讨论
-  
-  **视觉传播特征**:
-    - 情感冲击力: 强，直观视觉效果
-    - 传播速度: 快，易于快速理解
-    - 记忆效果: 好，视觉印象深刻
-  
-  **数据信息特征**:
-    - 精确度: 很高，客观可靠
-    - 权威性: 强，基于事实
-    - 参考价值: 高，支撑分析判断
+## Cross-Media Comprehensive Analysis (Кросс-медиа анализ)
+### Information Consistency Assessment
+  | Dimension     | Text Content | Image Content | Data Information | Consistency Score |
+  | Topic Focus | XX      | XX      | XX      | XX/10     |
+  | Sentiment Tendency | XX      | XX      | Neutral     | XX/10     |
+  | Dissemination Level   | XX      | XX      | XX      | XX/10     |
 
-### 整合效应分析
-  [多种媒体形式组合产生的综合效果]
+### Multi-Dimensional Influence Comparison
+  **Text Dissemination Characteristics**:
+    - Information Density: High, contains abundant details and viewpoints
+    - Rationality Level: High, strong logic
+    - Dissemination Depth: Deep, suitable for in-depth discussion
 
-## 多维度洞察与预测
-### 跨媒体趋势识别
-### 传播效果评估
-### 综合影响力评估
+  **Visual Dissemination Characteristics**:
+    - Emotional Impact: Strong, intuitive visual effect
+    - Dissemination Speed: Fast, easy to understand quickly
+    - Memory Effect: Good, deep visual impression
 
-## 多媒体数据附录
-### 图片内容汇总表
-### 关键数据指标集
-### 跨媒体关联分析图
-### AI分析结果汇总
+  **Data Information Characteristics**:
+    - Accuracy: Very high, objective and reliable
+    - Authority: Strong, based on facts
+    - Reference Value: High, supports analysis and judgment
+
+### Integration Effect Analysis
+  [Comprehensive effect produced by combination of multiple media forms]
+
+## Multi-Dimensional Insights and Predictions
+### Cross-Media Trend Identification
+### Dissemination Effect Assessment
+### Comprehensive Influence Assessment
+
+## Multimedia Data Appendix
+### Image Content Summary Table
+### Key Data Indicator Set
+### Cross-Media Correlation Analysis Chart
+### AI Analysis Results Summary
 ```
 
 ### 3.6 Сравнение трех движков
@@ -936,7 +936,7 @@ PROMPT: SYSTEM_PROMPT_REPORT_FORMATTING (MediaEngine версия)
 │                  │   психология     │ • Дезинформация  │ • Кросс-медиа│
 ├──────────────────┼──────────────────┼──────────────────┼─────────────┤
 │ СТИЛЬ ЯЗЫКА      │ Разговорный      │ Формальный       │ Описательный│
-│                  │ ("武大", "火了") │ журналистский    │ мультимедийн│
+│                  │ ("WHU", "went viral") │ журналистский    │ мультимедийн│
 ├──────────────────┼──────────────────┼──────────────────┼─────────────┤
 │ ВИЗУАЛИЗАЦИЯ     │ • Эмодзи 😊😡   │ • Таблицы фактов │ • Описание  │
 │ В ОТЧЕТЕ         │ • Цветовые       │ • Хронология     │   изображений│
@@ -944,9 +944,9 @@ PROMPT: SYSTEM_PROMPT_REPORT_FORMATTING (MediaEngine версия)
 │                  │ • Температурные  │                  │   таблицы   │
 │                  │   метафоры       │                  │ • Scoring   │
 ├──────────────────┼──────────────────┼──────────────────┼─────────────┤
-│ ТИПИЧНЫЙ         │ • "武汉大学舆情" │ • "乌克兰战争"   │ • "AI技术应用"│
-│ ЗАПРОС           │ • "小红书种草"   │ • "经济政策"     │ • "品牌视觉"│
-│                  │ • "网红争议"     │ • "科技突破"     │ • "产品评测"│
+│ ТИПИЧНЫЙ         │ • "Wuhan University public opinion" │ • "Ukraine war"   │ • "AI technology application"│
+│ ЗАПРОС           │ • "Xiaohongshu product recommendation"   │ • "economic policy"     │ • "brand visual"│
+│                  │ • "influencer controversy"     │ • "technology breakthrough"     │ • "product review"│
 ├──────────────────┼──────────────────┼──────────────────┼─────────────┤
 │ ДЛИНА ОТЧЕТА     │ 10 000+ слов     │ 10 000+ слов     │ 10 000+ слов│
 ├──────────────────┼──────────────────┼──────────────────┼─────────────┤
@@ -1005,33 +1005,33 @@ INPUT:
 │   Выбрать наиболее подходящий шаблон из 6 доступных типов          │
 │                                                                       │
 │ Доступные шаблоны:                                                   │
-│   1. 企业品牌声誉分析报告模板                                         │
+│   1. Corporate Brand Reputation Analysis Report Template            │
 │      (Анализ репутации корпоративного бренда)                        │
 │      - Использование: оценка имиджа бренда, здоровье активов        │
 │      - Период: годовой/полугодовой обзор                             │
 │      - Фокус: стратегический, глобальный анализ                      │
 │                                                                       │
-│   2. 市场竞争格局舆情分析报告模板                                      │
+│   2. Market Competition Landscape Public Opinion Analysis Report Template│
 │      (Анализ конкурентного ландшафта рынка)                          │
 │      - Использование: анализ конкурентов, позиционирование           │
 │      - Фокус: сравнение, стратегия дифференциации                    │
 │                                                                       │
-│   3. 日常或定期舆情监测报告模板                                         │
+│   3. Routine or Regular Public Opinion Monitoring Report Template   │
 │      (Регулярный мониторинг общественного мнения)                    │
 │      - Использование: еженедельный/ежемесячный мониторинг            │
 │      - Фокус: динамика, ключевые данные, ранние признаки рисков     │
 │                                                                       │
-│   4. 特定政策或行业动态舆情分析报告                                      │
+│   4. Specific Policy or Industry Dynamics Public Opinion Analysis Report│
 │      (Анализ политики/отраслевой динамики)                           │
 │      - Использование: релизы политики, регуляторные изменения        │
 │      - Фокус: глубокая интерпретация, прогнозирование трендов        │
 │                                                                       │
-│   5. 社会公共热点事件分析报告模板 ⭐ (РЕКОМЕНДУЕМЫЙ ПО УМОЛЧАНИЮ)    │
+│   5. Social Public Hot Event Analysis Report Template ⭐ (РЕКОМЕНДУЕМЫЙ ПО УМОЛЧАНИЮ)│
 │      (Анализ социальных общественных событий)                        │
 │      - Использование: общественные горячие темы, культурные феномены │
 │      - Фокус: социальная психология, релевантность для организации  │
 │                                                                       │
-│   6. 突发事件与危机公关舆情报告模板                                      │
+│   6. Emergency Event and Crisis PR Public Opinion Report Template   │
 │      (Отчет о кризисном управлении)                                  │
 │      - Использование: breaking негативные события с потенциальным    │
 │        вредом для организации                                        │
@@ -1165,7 +1165,7 @@ OUTPUT: Профессиональный HTML-отчет (30 000+ слов)
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[综合分析] {query} - 深度舆情分析报告</title>
+    <title>[Comprehensive Analysis] {query} - In-Depth Public Opinion Analysis Report</title>
     
     <!-- Chart.js для графиков -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -1185,100 +1185,100 @@ OUTPUT: Профессиональный HTML-отчет (30 000+ слов)
     <div class="container">
         <!-- Заголовок -->
         <div class="header">
-            <h1>[综合分析] {query}</h1>
-            <p class="subtitle">深度舆情分析报告</p>
-            <p class="date">生成时间: 2025-03-17 10:30:00</p>
+            <h1>[Comprehensive Analysis] {query}</h1>
+            <p class="subtitle">In-Depth Public Opinion Analysis Report</p>
+            <p class="date">Generation Time: 2025-03-17 10:30:00</p>
         </div>
-        
+
         <!-- Оглавление (НЕ sidebar, а в начале статьи) -->
         <div class="toc">
-            <h2>目录</h2>
+            <h2>Table of Contents</h2>
             <ul>
-                <li><a href="#executive-summary">执行摘要</a></li>
-                <li><a href="#query-analysis">新闻分析 (QueryEngine)</a></li>
-                <li><a href="#media-analysis">多媒体分析 (MediaEngine)</a></li>
-                <li><a href="#insight-analysis">舆情分析 (InsightEngine)</a></li>
-                <li><a href="#forum-discussion">多智能体讨论</a></li>
-                <li><a href="#comprehensive">综合结论</a></li>
+                <li><a href="#executive-summary">Executive Summary</a></li>
+                <li><a href="#query-analysis">News Analysis (QueryEngine)</a></li>
+                <li><a href="#media-analysis">Multimedia Analysis (MediaEngine)</a></li>
+                <li><a href="#insight-analysis">Public Opinion Analysis (InsightEngine)</a></li>
+                <li><a href="#forum-discussion">Multi-Agent Discussion</a></li>
+                <li><a href="#comprehensive">Comprehensive Conclusion</a></li>
             </ul>
         </div>
         
         <!-- Резюме -->
         <div id="executive-summary" class="section">
-            <h2>执行摘要</h2>
+            <h2>Executive Summary</h2>
             <!-- Интегрированные ключевые находки от всех трех движков -->
         </div>
-        
+
         <!-- QueryEngine результаты -->
         <div id="query-analysis" class="section">
-            <h2>新闻分析视角 (QueryEngine)</h2>
+            <h2>News Analysis Perspective (QueryEngine)</h2>
             <!-- Контент от QueryEngine -->
-            
+
             <!-- График временной линии новостей -->
             <div class="chart-container">
                 <canvas id="newsTimelineChart"></canvas>
             </div>
         </div>
-        
+
         <!-- MediaEngine результаты -->
         <div id="media-analysis" class="section">
-            <h2>多媒体分析视角 (MediaEngine)</h2>
+            <h2>Multimedia Analysis Perspective (MediaEngine)</h2>
             <!-- Контент от MediaEngine -->
-            
+
             <!-- График распределения типов контента -->
             <div class="chart-container">
                 <canvas id="contentTypesChart"></canvas>
             </div>
         </div>
-        
+
         <!-- InsightEngine результаты -->
         <div id="insight-analysis" class="section">
-            <h2>公众舆情视角 (InsightEngine)</h2>
+            <h2>Public Opinion Perspective (InsightEngine)</h2>
             <!-- Контент от InsightEngine -->
-            
+
             <!-- Круговая диаграмма анализа эмоций -->
             <div class="chart-container">
                 <canvas id="sentimentChart"></canvas>
             </div>
         </div>
-        
+
         <!-- Дискуссия форума -->
         <div id="forum-discussion" class="section">
-            <h2>多智能体讨论记录</h2>
+            <h2>Multi-Agent Discussion Log</h2>
             <div class="forum-log">
                 <!-- Форматированный журнал дискуссий -->
                 <div class="speech insight">
                     <span class="speaker">INSIGHT:</span>
-                    <span class="content">根据社交媒体数据...</span>
+                    <span class="content">According to social media data...</span>
                     <span class="timestamp">10:30:15</span>
                 </div>
                 <div class="speech media">
                     <span class="speaker">MEDIA:</span>
-                    <span class="content">从多媒体内容来看...</span>
+                    <span class="content">From multimedia content perspective...</span>
                     <span class="timestamp">10:30:45</span>
                 </div>
                 <div class="speech query">
                     <span class="speaker">QUERY:</span>
-                    <span class="content">新闻报道显示...</span>
+                    <span class="content">News reports show...</span>
                     <span class="timestamp">10:31:10</span>
                 </div>
                 <div class="speech host">
                     <span class="speaker">HOST:</span>
-                    <span class="content">综合各位的发言...</span>
+                    <span class="content">Synthesizing everyone's remarks...</span>
                     <span class="timestamp">10:31:40</span>
                 </div>
             </div>
         </div>
-        
+
         <!-- Комплексные выводы -->
         <div id="comprehensive" class="section">
-            <h2>综合结论与建议</h2>
+            <h2>Comprehensive Conclusions and Recommendations</h2>
             <!-- Интегрированные выводы -->
         </div>
-        
+
         <!-- Приложение данных -->
         <div class="appendix">
-            <h2>数据附录</h2>
+            <h2>Data Appendix</h2>
             <!-- Детальные данные, таблицы, источники -->
         </div>
     </div>
@@ -1290,7 +1290,7 @@ OUTPUT: Профессиональный HTML-отчет (30 000+ слов)
         new Chart(sentimentCtx, {
             type: 'pie',
             data: {
-                labels: ['非常正面', '正面', '中性', '负面', '非常负面'],
+                labels: ['Very Positive', 'Positive', 'Neutral', 'Negative', 'Very Negative'],
                 datasets: [{
                     data: [20, 45, 20, 10, 5],
                     backgroundColor: ['#4CAF50', '#8BC34A', '#FFC107', '#FF9800', '#F44336']
@@ -1426,13 +1426,13 @@ FORUM_LOG_PATH: str = "logs/forum.log"
 │ Условие триггера:                                                    │
 │   Обнаружена строка в любом из трех логов:                          │
 │     - "FirstSummaryNode" OR                                         │
-│     - "正在生成首次段落总结" OR                                       │
+│     - "Generating first paragraph summary" OR                                       │
 │     - "{Engine}.nodes.summary_node" (InsightEngine/MediaEngine/...)│
 │                                                                       │
 │ Действия при триггере:                                              │
 │   1. is_searching = True                                            │
 │   2. clear_forum_log()  # очистить и начать новую сессию           │
-│   3. Записать в forum.log: "=== ForumEngine 监控开始 - {time} ===" │
+│   3. Записать в forum.log: "=== ForumEngine monitoring started - {time} ===" │
 └─────────────────────────────────────────────────────────────────────┘
   │
   ▼
@@ -1474,14 +1474,14 @@ FORUM_LOG_PATH: str = "logs/forum.log"
 │ │      - Содержит "FirstSummaryNode" OR                         │   │
 │ │      - Содержит "ReflectionSummaryNode" OR                    │   │
 │ │      - Содержит "{Engine}.nodes.summary_node" OR              │   │
-│ │      - Содержит "正在生成首次段落总结" OR                      │   │
-│ │      - Содержит "正在生成反思总结"                             │   │
+│ │      - Содержит "Generating first paragraph summary" OR                      │   │
+│ │      - Содержит "Generating reflection summary"                             │   │
 │ │   ❌ НЕ является ERROR уровнем                                 │   │
 │ │   ❌ НЕ содержит ошибочные ключевые слова:                     │   │
-│ │      "JSON解析失败", "JSON修复失败", "Traceback"              │   │
+│ │      "JSON parsing failed", "JSON repair failed", "Traceback"              │   │
 │ │                                                                 │   │
 │ │ Извлечение JSON контента:                                      │   │
-│ │   Если обнаружена строка "清理后的输出: {"                     │   │
+│ │   Если обнаружена строка "Cleaned output: {"                     │   │
 │ │   → Начинается многострочный захват JSON                       │   │
 │ │   → capturing_json[app_name] = True                           │   │
 │ │   → json_buffer[app_name] = [line1, line2, ...]               │   │
@@ -1493,7 +1493,7 @@ FORUM_LOG_PATH: str = "logs/forum.log"
 │ │ Очистка контента:                                              │   │
 │ │   - Удаление timestamp: [HH:MM:SS] или YYYY-MM-DD HH:mm:ss.SSS│   │
 │ │   - Удаление тегов: [INSIGHT], [MEDIA], [QUERY]               │   │
-│ │   - Удаление prefix: "首次总结: ", "反思总结: ", "清理后的输出: "│   │
+│ │   - Удаление prefix: "First summary: ", "Reflection summary: ", "Cleaned output: "│   │
 │ │   - Удаление множественных пробелов                            │   │
 │ │                                                                 │   │
 │ │ Результат: List[str] - очищенные выступления агента           │   │
@@ -1545,11 +1545,11 @@ FORUM_LOG_PATH: str = "logs/forum.log"
 │ │   "[HH:MM:SS] [SPEAKER] content"                              │   │
 │ │                                                                 │   │
 │ │ Пример:                                                         │   │
-│ │   "[10:30:15] [INSIGHT] 根据社交媒体数据分析..."              │   │
-│ │   "[10:30:45] [MEDIA] 从视觉内容来看..."                      │   │
-│ │   "[10:31:10] [QUERY] 最新新闻报道显示..."                    │   │
-│ │   "[10:31:35] [INSIGHT] 进一步的舆情分析表明..."              │   │
-│ │   "[10:32:00] [MEDIA] 图片数据补充说明..."                    │   │
+│ │   "[10:30:15] [INSIGHT] According to social media data analysis..."              │   │
+│ │   "[10:30:45] [MEDIA] From visual content perspective..."                      │   │
+│ │   "[10:31:10] [QUERY] Latest news reports show..."                    │   │
+│ │   "[10:31:35] [INSIGHT] Further public opinion analysis shows..."              │   │
+│ │   "[10:32:00] [MEDIA] Image data supplement..."                    │   │
 │ └───────────────────────────────────────────────────────────────┘   │
 │   │                                                                  │
 │   ▼                                                                  │
@@ -1669,12 +1669,12 @@ FORUM_LOG_PATH: str = "logs/forum.log"
 │   1. Файл лога уменьшился в размере (лог был очищен)               │
 │      → Немедленное завершение сессии                                │
 │      → is_searching = False                                         │
-│      → Записать: "=== ForumEngine 论坛结束 - {time} ==="           │
+│      → Записать: "=== ForumEngine Forum ended - {time} ==="           │
 │                                                                       │
 │   2. Таймаут (7200 секунд = 2 часа без активности)                 │
 │      → search_inactive_count >= 7200                                │
 │      → is_searching = False                                         │
-│      → Записать: "=== ForumEngine 论坛结束 - {time} ==="           │
+│      → Записать: "=== ForumEngine Forum ended - {time} ==="           │
 │                                                                       │
 │ После завершения:                                                    │
 │   - Возврат в ФАЗУ 1 (ожидание нового триггера)                    │
@@ -1692,28 +1692,28 @@ OUTPUT: logs/forum.log (форматированный журнал дискус
 ### 5.2 Формат forum.log
 
 ```
-[10:30:00] [SYSTEM] === ForumEngine 监控开始 - 2025-03-17 10:30:00 ===
+[10:30:00] [SYSTEM] === ForumEngine Monitoring Started - 2025-03-17 10:30:00 ===
 
-[10:30:15] [INSIGHT] 根据社交媒体数据分析，武汉大学相关话题在过去24小时内出现显著增长。微博平台上的讨论热度提升了320%，主要集中在以下几个方面：\n\n1. 校园管理政策调整引发学生群体广泛关注\n2. 樱花季临近，校外游客预约系统升级\n3. 学生会改选相关讨论\n\n情感分析显示，整体舆情倾向积极（67.3%），但也存在部分质疑声音（18.2%），主要关注点在于...[更多内容]
+[10:30:15] [INSIGHT] According to social media data analysis, topics related to Wuhan University have shown significant growth in the past 24 hours. Discussion heat on Weibo platform increased by 320%, mainly focused on the following aspects:\n\n1. Campus management policy adjustments triggered widespread attention from student groups\n2. Cherry blossom season approaching, off-campus visitor reservation system upgrade\n3. Student union election-related discussions\n\nSentiment analysis shows overall public opinion tends to be positive (67.3%), but there are also some questioning voices (18.2%), mainly focusing on...[more content]
 
-[10:30:45] [MEDIA] 从多媒体内容分析来看，武汉大学相关的视觉传播呈现以下特征：\n\n**图片内容分布**：\n- 校园风景照片占比最高（45%），主要为樱花大道、珞珈山等标志性景观\n- 学生活动照片次之（30%），体现校园生活丰富性\n- 官方宣传图片占15%\n\n**视觉情感倾向**：\n整体呈现积极、温馨的视觉风格，图片中的色彩以粉色（樱花）、绿色（校园）为主...[更多内容]
+[10:30:45] [MEDIA] From multimedia content analysis perspective, visual communication related to Wuhan University shows the following characteristics:\n\n**Image Content Distribution**:\n- Campus landscape photos account for the highest proportion (45%), mainly iconic landscapes such as Sakura Avenue and Luojia Mountain\n- Student activity photos are second (30%), reflecting the richness of campus life\n- Official promotional images account for 15%\n\n**Visual Sentiment Tendency**:\nOverall presents a positive and warm visual style, with colors in the images mainly pink (cherry blossoms) and green (campus)...[more content]
 
-[10:31:10] [QUERY] 最新新闻报道显示，武汉大学近期有以下几个重要动态：\n\n1. 【官方发布】武汉大学于3月15日发布2025年樱花季游客预约通知，将采用新的线上预约系统...\n   - 来源：武汉大学官方网站\n   - 发布时间：2025-03-15 09:00\n   - 可信度：非常高\n\n2. 【媒体报道】多家主流媒体关注武大樱花季管理措施...\n   - 新华社：强调"科学管理，文明赏花"\n   - 人民日报：聚焦"高校开放与管理平衡"\n...[更多内容]
+[10:31:10] [QUERY] Latest news reports show that Wuhan University has the following important developments recently:\n\n1. [Official Release] Wuhan University released the 2025 cherry blossom season visitor reservation notice on March 15, adopting a new online reservation system...\n   - Source: Wuhan University official website\n   - Release time: 2025-03-15 09:00\n   - Credibility: Very high\n\n2. [Media Reports] Multiple mainstream media outlets focus on WHU cherry blossom season management measures...\n   - Xinhua News Agency: Emphasizes "scientific management, civilized flower viewing"\n   - People's Daily: Focuses on "balance between university openness and management"\n...[more content]
 
-[10:31:35] [INSIGHT] 进一步的舆情分析表明，不同平台用户群体对武大相关话题的关注点存在差异：\n\n**B站用户（18-25岁为主）**：\n- 关注点：校园vlog、学习生活分享、樱花季攻略\n- 情感倾向：非常积极（85.6%正面）\n- 代表性评论："武大yyds！"、"梦想中的大学"\n\n**微博用户（更广泛年龄层）**：\n- 关注点：校园管理政策、游客预约、文明赏花\n- 情感倾向：整体积极但有理性讨论（72.1%正面）\n- 代表性评论：讨论如何平衡开放与管理...[更多内容]
+[10:31:35] [INSIGHT] Further public opinion analysis shows differences in focus among user groups on different platforms...[extensive analysis in English]
 
-[10:32:00] [MEDIA] 图片数据补充说明：通过对500张武大相关图片的视觉分析发现：\n\n**传播效果评估**：\n- 高传播力图片（>1000次转发）：主要为樱花全景图、师生互动场景\n- 中等传播力图片（100-1000次）：日常校园生活、食堂美食\n- 低传播力图片（<100次）：建筑细节、普通街景\n\n**情感共鸣分析**：\n美好、温馨、怀旧是主要情感共鸣点...[更多内容]
+[10:32:00] [MEDIA] Image data supplement: Through visual analysis of 500 WHU-related images...[extensive analysis in English]
 
-[10:32:30] [HOST] 【论坛主持人综合分析】\n\n## 一、事件梳理与时间线分析\n\n根据三位agent的发言，我们可以清晰地看到武汉大学近期舆情的完整图景：\n\n**时间线重建**：\n- 3月15日：官方发布樱花季预约通知（QUERY提供）\n- 3月15-16日：社交媒体讨论热度激增320%（INSIGHT数据）\n- 3月16-17日：多媒体内容大量传播（MEDIA分析）\n\n**关键转折点**：\n预约系统的升级是本轮舆情的主要触发点，引发了公众对"高校开放度"这一更深层话题的讨论。\n\n## 二、视角整合与对比分析\n\n**三个agent的视角互补性**：\n\n1. **INSIGHT agent**提供了社交媒体的民间声音\n   - 优势：真实反映公众情感，数据量大\n   - 发现：不同平台用户关注点差异明显\n   - B站年轻用户更关注"体验"，微博用户更关注"管理"\n\n2. **MEDIA agent**提供了视觉传播维度\n   - 优势：补充了文字之外的情感表达\n   - 发现：樱花美景图片的高传播力验证了"美好"是主旋律\n   - 视觉内容与文字舆情高度一致（都是积极为主）\n\n3. **QUERY agent**提供了官方和新闻维度\n   - 优势：权威性高，事实清晰\n   - 发现：官方措施及时，主流媒体整体正面报道\n\n**信息一致性评估**：\n三个数据源高度一致，都显示舆情整体积极，这增强了我们结论的可信度。唯一的分歧在于"质疑声音"的占比——INSIGHT提到18.2%的质疑，但MEDIA和QUERY中较少反映，可能是因为负面情绪在视觉和正式新闻中表达较少。\n\n## 三、深层分析与趋势预判\n\n**深层原因**：\n1. **季节性因素**：樱花季是武大的年度"高光时刻"，自然引发关注\n2. **管理创新**：新预约系统体现了"科技+管理"的现代化尝试\n3. **社会心理**：疫情后公众对"校园开放"这一话题格外敏感\n\n**趋势预判**：\n- **短期（1-2周）**：随着樱花盛开，舆情热度将继续上升，预计在3月下旬达到峰值\n- **潜在风险点**：\n  1. 如果预约系统出现技术故障，可能引发负面舆情\n  2. 如果游客管理不当（如拥挤、不文明行为），可能影响学校声誉\n- **机会点**：\n  这是武大展示"智慧校园"形象的好机会，如果管理得当，可以成为高校开放管理的典范案例\n\n## 四、问题引导与讨论方向\n\n基于以上分析，我提出以下问题供各位agent进一步探讨：\n\n**问题1**：INSIGHT agent提到的18.2%质疑声音具体指向什么？是对预约系统的技术层面质疑，还是对"限制游客"这一政策本身的质疑？建议深入挖掘这部分负面舆情的具体诉求。\n\n**问题2**：MEDIA agent，能否进一步分析"低传播力图片"的特征？了解什么样的内容传播效果不佳，有助于我们理解公众的真实兴趣点。\n\n**问题3**：QUERY agent，主流媒体的报道中是否有提及其他高校的类似做法？横向对比可以帮助我们判断武大的做法是否具有创新性或普遍性。\n\n**后续研究建议**：\n- INSIGHT：建议监控未来一周内舆情走势，特别关注樱花盛开期的实时反馈\n- MEDIA：建议收集游客实拍图片/视频，分析"实际体验"与"期待"的差距\n- QUERY：建议追踪后续新闻报道，特别是如果出现突发事件（如系统故障、安全事故）的舆情应对\n\n【主持人发言结束】
+[10:32:30] [HOST] [Forum Moderator Comprehensive Analysis covering event review, timeline, perspective integration, deep analysis, trend forecasting...[extensive multi-page analysis in English]]
 
-[10:33:05] [INSIGHT] 针对HOST提出的问题1，我进一步分析了18.2%质疑声音的构成...[继续讨论]
+[10:33:05] [INSIGHT] Regarding HOST's Question 1, I further analyzed the 18.2% questioning voices...[continuing discussion]
 
 ...
 
-[11:45:30] [SYSTEM] === ForumEngine 论坛结束 - 2025-03-17 11:45:30 ===
+[11:45:30] [SYSTEM] === ForumEngine Monitoring Ended - 2025-03-17 11:45:30 ===
 ```
 
-### 5.3 关键技术细节
+### 5.3 Key Technical Details
 
 #### 5.3.1 ERROR Block Filtering (критически важно!)
 
@@ -1754,8 +1754,8 @@ def process_lines_for_json(lines, app_name):
 
 ```python
 # Проблема: LLM выход может быть многострочным:
-#   [10:30:15] [InsightEngine] 清理后的输出: {
-#   [10:30:15]   "paragraph_latest_state": "## 核心发现\n\n武汉大学..."
+#   [10:30:15] [InsightEngine] Cleaned output: {
+#   [10:30:15]   "paragraph_latest_state": "## Core Findings\n\nWuhan University..."
 #   [10:30:15] }
 
 # Решение: State Machine для захвата
@@ -1763,7 +1763,7 @@ def process_lines_for_json(lines, app_name):
 capturing_json[app_name] = False  # Не захватывается
 json_buffer[app_name] = []        # Буфер пуст
 
-# Когда встречается "清理后的输出: {"
+# Когда встречается "Cleaned output: {"
 if is_json_start_line(line):
     capturing_json[app_name] = True
     json_buffer[app_name] = [line]
@@ -1871,11 +1871,11 @@ MONITOR_INTERVAL: int = 1  # Проверка каждую 1 секунду
 │ │ Tool: get_today_news.py                                        │   │
 │ │                                                                 │   │
 │ │ Источники:                                                     │   │
-│ │   - Baidu热搜 (Baidu Hot Search)                              │   │
-│ │   - 微博热搜 (Weibo Hot Search)                               │   │
-│ │   - 知乎热榜 (Zhihu Hot List)                                  │   │
-│ │   - 抖音热点 (Douyin Trending)                                │   │
-│ │   - 36氪科技 (36Kr Tech News)                                 │   │
+│ │   - Baidu Hot Search (Baidu trending)                        │   │
+│ │   - Weibo Hot Search (Weibo trending)                        │   │
+│ │   - Zhihu Hot List (Zhihu trending)                          │   │
+│ │   - Douyin Trending (Douyin hot topics)                      │   │
+│ │   - 36Kr Tech News (36Kr technology news)                    │   │
 │ │                                                                 │   │
 │ │ Метод: Веб-скрапинг с requests + BeautifulSoup               │   │
 │ │                                                                 │   │
@@ -1912,8 +1912,8 @@ MONITOR_INTERVAL: int = 1  # Проверка каждую 1 секунду
 │ │ Please analyze the following {count} today's hot news items: │   │
 │ │                                                                 │   │
 │ │ News List:                                                     │   │
-│ │ 1. [Baidu] 武汉大学樱花季开放预约                             │   │
-│ │ 2. [Weibo] AI技术在教育领域的应用                             │   │
+│ │ 1. [Baidu] Wuhan University cherry blossom season open for reservation│   │
+│ │ 2. [Weibo] AI technology application in education field       │   │
 │ │ ...                                                             │   │
 │ │                                                                 │   │
 │ │ Task 1: Extract keywords (max 100)                            │   │
@@ -1921,8 +1921,8 @@ MONITOR_INTERVAL: int = 1  # Проверка каждую 1 секунду
 │ │                                                                 │   │
 │ │ Output format:                                                 │   │
 │ │ {                                                               │   │
-│ │   "keywords": ["武汉大学", "樱花季", "AI教育", ...],          │   │
-│ │   "summary": "今日新闻主要聚焦于..."                          │   │
+│ │   "keywords": ["Wuhan University", "cherry blossom season", "AI education", ...],│   │
+│ │   "summary": "Today's news mainly focuses on..."              │   │
 │ │ }                                                               │   │
 │ │ ─────────────────────────────────────────────────────────────  │   │
 │ │                                                                 │   │
@@ -1942,10 +1942,10 @@ MONITOR_INTERVAL: int = 1  # Проверка каждую 1 секунду
 │ │                                                                 │   │
 │ │ Запись:                                                        │   │
 │ │   INSERT INTO daily_topics (date, summary, keyword_count)     │   │
-│ │   VALUES ('2025-03-17', '今日新闻主要聚焦于...', 78)          │   │
+│ │   VALUES ('2025-03-17', 'Today\'s news mainly focuses on...', 78)│   │
 │ │                                                                 │   │
 │ │   INSERT INTO extracted_keywords (date, keyword, weight)      │   │
-│ │   VALUES ('2025-03-17', '武汉大学', 0.95), ...                │   │
+│ │   VALUES ('2025-03-17', 'Wuhan University', 0.95), ...        │   │
 │ └───────────────────────────────────────────────────────────────┘   │
 └─────────────────────────────────────────────────────────────────────┘
   │
@@ -1981,7 +1981,7 @@ MONITOR_INTERVAL: int = 1  # Проверка каждую 1 секунду
 │ │                                                                 │   │
 │ │ ПЛАТФОРМЫ (7):                                                 │   │
 │ │ ┌─────────────────────────────────────────────────────────┐   │   │
-│ │ │ 1. Bilibili (哔哩哔哩)                                   │   │   │
+│ │ │ 1. Bilibili (Chinese video platform)                     │   │   │
 │ │ │    Тип: Видео + комментарии                              │   │   │
 │ │ │    Метод: API + cookies авторизация                      │   │   │
 │ │ │    Поля: video_title, author, play_count, like_count,    │   │   │
@@ -1989,7 +1989,7 @@ MONITOR_INTERVAL: int = 1  # Проверка каждую 1 секунду
 │ │ └─────────────────────────────────────────────────────────┘   │   │
 │ │                                                                 │   │
 │ │ ┌─────────────────────────────────────────────────────────┐   │   │
-│ │ │ 2. Weibo (微博)                                          │   │   │
+│ │ │ 2. Weibo (Chinese microblog)                             │   │   │
 │ │ │    Тип: Микроблог посты + комментарии                    │   │   │
 │ │ │    Метод: Mobile API                                      │   │   │
 │ │ │    Поля: text, author, created_at, like_count,            │   │   │
@@ -1997,7 +1997,7 @@ MONITOR_INTERVAL: int = 1  # Проверка каждую 1 секунду
 │ │ └─────────────────────────────────────────────────────────┘   │   │
 │ │                                                                 │   │
 │ │ ┌─────────────────────────────────────────────────────────┐   │   │
-│ │ │ 3. Douyin (抖音)                                         │   │   │
+│ │ │ 3. Douyin (Chinese short video app)                      │   │   │
 │ │ │    Тип: Короткие видео + комментарии                     │   │   │
 │ │ │    Метод: Web scraping + Selenium                        │   │   │
 │ │ │    Поля: desc, author, digg_count, comment_count,        │   │   │
@@ -2005,14 +2005,14 @@ MONITOR_INTERVAL: int = 1  # Проверка каждую 1 секунду
 │ │ └─────────────────────────────────────────────────────────┘   │   │
 │ │                                                                 │   │
 │ │ ┌─────────────────────────────────────────────────────────┐   │   │
-│ │ │ 4. Kuaishou (快手)                                       │   │   │
+│ │ │ 4. Kuaishou (Chinese short video platform)               │   │   │
 │ │ │    Тип: Короткие видео + комментарии                     │   │   │
 │ │ │    Метод: API                                             │   │   │
 │ │ │    Поля: caption, author, view_count, like_count         │   │   │
 │ │ └─────────────────────────────────────────────────────────┘   │   │
 │ │                                                                 │   │
 │ │ ┌─────────────────────────────────────────────────────────┐   │   │
-│ │ │ 5. Xiaohongshu (小红书)                                  │   │   │
+│ │ │ 5. Xiaohongshu (Chinese lifestyle platform)              │   │   │
 │ │ │    Тип: Лайфстайл посты + комментарии                    │   │   │
 │ │ │    Метод: API                                             │   │   │
 │ │ │    Поля: title, desc, author, like_count, collect_count, │   │   │
@@ -2020,7 +2020,7 @@ MONITOR_INTERVAL: int = 1  # Проверка каждую 1 секунду
 │ │ └─────────────────────────────────────────────────────────┘   │   │
 │ │                                                                 │   │
 │ │ ┌─────────────────────────────────────────────────────────┐   │   │
-│ │ │ 6. Zhihu (知乎)                                          │   │   │
+│ │ │ 6. Zhihu (Chinese Q&A platform)                          │   │   │
 │ │ │    Тип: Q&A + статьи + комментарии                       │   │   │
 │ │ │    Метод: API                                             │   │   │
 │ │ │    Поля: question, answer, author, voteup_count,         │   │   │
@@ -2028,7 +2028,7 @@ MONITOR_INTERVAL: int = 1  # Проверка каждую 1 секунду
 │ │ └─────────────────────────────────────────────────────────┘   │   │
 │ │                                                                 │   │
 │ │ ┌─────────────────────────────────────────────────────────┐   │   │
-│ │ │ 7. Tieba (贴吧)                                          │   │   │
+│ │ │ 7. Tieba (Chinese forum/BBS)                             │   │   │
 │ │ │    Тип: Форум посты + комментарии                        │   │   │
 │ │ │    Метод: Web scraping                                    │   │   │
 │ │ │    Поля: title, content, author, reply_num, create_time  │   │   │
@@ -2080,8 +2080,8 @@ MONITOR_INTERVAL: int = 1  # Проверка каждую 1 секунду
 │ │   platform_id, keyword, title_or_content, author_nickname,    │   │
 │ │   publish_time, url, hotness_score, engagement                │   │
 │ │ ) VALUES (                                                     │   │
-│ │   'BV1xx411c7mD', '武汉大学',                                  │   │
-│ │   '武大樱花真的太美了！', '@UP主123',                          │   │
+│ │   'BV1xx411c7mD', 'Wuhan University',                         │   │
+│ │   'WHU cherry blossoms are really so beautiful!', '@UPloader123',│   │
 │ │   '2025-03-17 10:30:00',                                       │   │
 │ │   'https://www.bilibili.com/video/BV1xx411c7mD',              │   │
 │ │   15420, '{"likes": 12000, "comments": 3000, ...}'            │   │
@@ -2128,7 +2128,7 @@ CREATE TABLE extracted_keywords (
 -- 1. Bilibili
 CREATE TABLE bilibili_posts (
     id SERIAL PRIMARY KEY,
-    platform_id VARCHAR(50) UNIQUE,   -- BV号
+    platform_id VARCHAR(50) UNIQUE,   -- BV ID
     keyword VARCHAR(100),
     title_or_content TEXT,
     author_nickname VARCHAR(100),
@@ -2338,7 +2338,7 @@ DAILY_CRAWL_TIME: str = "02:00"      # Ежедневный сбор в 2:00 AM
 ### 7.1 Хронология выполнения
 
 ```
-T=0: ПОЛЬЗОВАТЕЛЬ → query: "武汉大学舆情分析"
+T=0: ПОЛЬЗОВАТЕЛЬ → query: "Wuhan University public opinion analysis"
 
 T=0.1s:
   ├─ ForumEngine.start_monitoring() (если еще не запущен)
