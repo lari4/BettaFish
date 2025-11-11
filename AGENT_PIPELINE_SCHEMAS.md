@@ -824,78 +824,78 @@ PROMPT: SYSTEM_PROMPT_REPORT_FORMATTING (MediaEngine версия)
 
 Структура панорамного мультимедийного отчета:
 
-# [全景分析] {тема} 多维度整合分析报告
+# [Panoramic Analysis] {тема} Multi-Dimensional Integrated Analysis Report
 
-## 全景概览 (Panoramic Overview)
-### 多维度信息汇总
-  - 文本信息核心发现 (текстовые находки)
-  - 视觉内容关键洞察 (визуальные инсайты)
-  - 数据趋势重要指标 (тренды данных)
-  - 跨媒体关联分析 (кросс-медиа анализ)
+## Panoramic Overview (Панорамный обзор)
+### Multi-Dimensional Information Summary
+  - Core Text Information Findings (текстовые находки)
+  - Key Visual Content Insights (визуальные инсайты)
+  - Important Data Trend Indicators (тренды данных)
+  - Cross-Media Correlation Analysis (кросс-медиа анализ)
 
-### 信息来源分布图
+### Information Source Distribution Map
   | Тип информации | % |
-  | 网页文本内容    | XX% |
-  | 图片视觉信息    | XX% |
-  | 结构化数据      | XX% |
-  | AI分析洞察     | XX% |
+  | Web Text Content    | XX% |
+  | Image Visual Information    | XX% |
+  | Structured Data      | XX% |
+  | AI Analysis Insights     | XX% |
 
 ## 1. [Параграф 1]
-### 1.1 多模态信息画像
-  | 信息类型 | 数量 | 主要内容 | 情感 | 传播效果 | 影响指数 |
-  | 文本内容 | XX  | XX主题   | XX  | XX      | XX/10   |
-  | 图片内容 | XX  | XX类型   | XX  | XX      | XX/10   |
-  | 数据信息 | XX  | XX指标   | 中性 | XX      | XX/10   |
+### 1.1 Multimodal Information Portrait
+  | Information Type | Quantity | Main Content | Sentiment | Dissemination Effect | Impact Index |
+  | Text Content | XX  | XX Topic   | XX  | XX      | XX/10   |
+  | Image Content | XX  | XX Type   | XX  | XX      | XX/10   |
+  | Data Information | XX  | XX Indicator   | Neutral | XX      | XX/10   |
 
-### 1.2 深度视觉内容分析
-  **图片类型分布**:
-  - 新闻图片 (XX张): 展示事件现场，情感倾向客观中立
-    • 代表性图片: "图片描述内容..." (传播热度: ★★★★☆)
-    • 视觉冲击力: 强，主要展示XX场景
-  
-  - 用户创作 (XX张): 反映个人观点，情感表达多样
-    • 代表性图片: "图片描述内容..." (互动数据: XX赞)
-    • 创作特点: XX风格，传达XX情绪
+### 1.2 In-Depth Visual Content Analysis
+  **Image Type Distribution**:
+  - News Images (XX images): Show event scene, emotionally objective and neutral
+    • Representative image: "Image description content..." (Dissemination heat: ★★★★☆)
+    • Visual impact: Strong, mainly displays XX scene
 
-### 1.3 文本与视觉整合分析
-### 1.4 数据与内容交叉验证
+  - User-Created (XX images): Reflect personal views, diverse emotional expression
+    • Representative image: "Image description content..." (Interaction data: XX likes)
+    • Creation characteristics: XX style, conveys XX emotion
 
-## 跨媒体综合分析 (Cross-Media Analysis)
-### 信息一致性评估
-  | 维度     | 文本内容 | 图片内容 | 数据信息 | 一致性评分 |
-  | 主题焦点 | XX      | XX      | XX      | XX/10     |
-  | 情感倾向 | XX      | XX      | 中性     | XX/10     |
-  | 传播度   | XX      | XX      | XX      | XX/10     |
+### 1.3 Text and Visual Integration Analysis
+### 1.4 Data and Content Cross-Verification
 
-### 多维度影响力对比
-  **文本传播特征**:
-    - 信息密度: 高，包含大量细节和观点
-    - 理性程度: 高，逻辑性强
-    - 传播深度: 深，适合深度讨论
-  
-  **视觉传播特征**:
-    - 情感冲击力: 强，直观视觉效果
-    - 传播速度: 快，易于快速理解
-    - 记忆效果: 好，视觉印象深刻
-  
-  **数据信息特征**:
-    - 精确度: 很高，客观可靠
-    - 权威性: 强，基于事实
-    - 参考价值: 高，支撑分析判断
+## Cross-Media Comprehensive Analysis (Кросс-медиа анализ)
+### Information Consistency Assessment
+  | Dimension     | Text Content | Image Content | Data Information | Consistency Score |
+  | Topic Focus | XX      | XX      | XX      | XX/10     |
+  | Sentiment Tendency | XX      | XX      | Neutral     | XX/10     |
+  | Dissemination Level   | XX      | XX      | XX      | XX/10     |
 
-### 整合效应分析
-  [多种媒体形式组合产生的综合效果]
+### Multi-Dimensional Influence Comparison
+  **Text Dissemination Characteristics**:
+    - Information Density: High, contains abundant details and viewpoints
+    - Rationality Level: High, strong logic
+    - Dissemination Depth: Deep, suitable for in-depth discussion
 
-## 多维度洞察与预测
-### 跨媒体趋势识别
-### 传播效果评估
-### 综合影响力评估
+  **Visual Dissemination Characteristics**:
+    - Emotional Impact: Strong, intuitive visual effect
+    - Dissemination Speed: Fast, easy to understand quickly
+    - Memory Effect: Good, deep visual impression
 
-## 多媒体数据附录
-### 图片内容汇总表
-### 关键数据指标集
-### 跨媒体关联分析图
-### AI分析结果汇总
+  **Data Information Characteristics**:
+    - Accuracy: Very high, objective and reliable
+    - Authority: Strong, based on facts
+    - Reference Value: High, supports analysis and judgment
+
+### Integration Effect Analysis
+  [Comprehensive effect produced by combination of multiple media forms]
+
+## Multi-Dimensional Insights and Predictions
+### Cross-Media Trend Identification
+### Dissemination Effect Assessment
+### Comprehensive Influence Assessment
+
+## Multimedia Data Appendix
+### Image Content Summary Table
+### Key Data Indicator Set
+### Cross-Media Correlation Analysis Chart
+### AI Analysis Results Summary
 ```
 
 ### 3.6 Сравнение трех движков
