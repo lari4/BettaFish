@@ -1555,36 +1555,36 @@ Output:
 
 ```python
 def _build_analysis_prompt(self, news_text: str, max_keywords: int) -> str:
-    """构建分析提示词"""
+    """Build analysis prompt"""
     news_count = len(news_text.split('\n'))
 
     prompt = f"""
-请分析以下{news_count}条今日热点新闻，完成两个任务：
+Please analyze the following {news_count} today's hot news items and complete two tasks:
 
-新闻列表：
+News List:
 {news_text}
 
-任务1：提取关键词（最多{max_keywords}个）
-- 提取能代表今日热点话题的关键词
-- 关键词应该适合用于社交媒体平台搜索
-- 优先选择热度高、讨论量大的话题
-- 避免过于宽泛或过于具体的词汇
+Task 1: Extract Keywords (maximum {max_keywords} keywords)
+- Extract keywords that can represent today's hot topics
+- Keywords should be suitable for social media platform searches
+- Prioritize topics with high heat and large discussion volume
+- Avoid vocabulary that is too broad or too specific
 
-任务2：撰写新闻分析总结（150-300字）
-- 简要概括今日热点新闻的主要内容
-- 指出当前社会关注的重点话题方向
-- 分析这些热点反映的社会现象或趋势
-- 语言简洁明了，客观中性
+Task 2: Write News Analysis Summary (150-300 words)
+- Briefly summarize the main content of today's hot news
+- Point out the focus topic directions of current social attention
+- Analyze the social phenomena or trends reflected by these hotspots
+- Language should be concise, clear, objective and neutral
 
-请严格按照以下JSON格式输出：
+Please strictly output in the following JSON format:
 ```json
 {{
-  "keywords": ["关键词1", "关键词2", "关键词3"],
-  "summary": "今日新闻分析总结内容..."
+  "keywords": ["keyword1", "keyword2", "keyword3"],
+  "summary": "Today's news analysis summary content..."
 }}
 ```
 
-请直接输出JSON格式的结果，不要包含其他文字说明。
+Please directly output the JSON format results without including other text explanations.
 """
     return prompt
 ```
