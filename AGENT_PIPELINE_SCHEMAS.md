@@ -1005,33 +1005,33 @@ INPUT:
 │   Выбрать наиболее подходящий шаблон из 6 доступных типов          │
 │                                                                       │
 │ Доступные шаблоны:                                                   │
-│   1. 企业品牌声誉分析报告模板                                         │
+│   1. Corporate Brand Reputation Analysis Report Template            │
 │      (Анализ репутации корпоративного бренда)                        │
 │      - Использование: оценка имиджа бренда, здоровье активов        │
 │      - Период: годовой/полугодовой обзор                             │
 │      - Фокус: стратегический, глобальный анализ                      │
 │                                                                       │
-│   2. 市场竞争格局舆情分析报告模板                                      │
+│   2. Market Competition Landscape Public Opinion Analysis Report Template│
 │      (Анализ конкурентного ландшафта рынка)                          │
 │      - Использование: анализ конкурентов, позиционирование           │
 │      - Фокус: сравнение, стратегия дифференциации                    │
 │                                                                       │
-│   3. 日常或定期舆情监测报告模板                                         │
+│   3. Routine or Regular Public Opinion Monitoring Report Template   │
 │      (Регулярный мониторинг общественного мнения)                    │
 │      - Использование: еженедельный/ежемесячный мониторинг            │
 │      - Фокус: динамика, ключевые данные, ранние признаки рисков     │
 │                                                                       │
-│   4. 特定政策或行业动态舆情分析报告                                      │
+│   4. Specific Policy or Industry Dynamics Public Opinion Analysis Report│
 │      (Анализ политики/отраслевой динамики)                           │
 │      - Использование: релизы политики, регуляторные изменения        │
 │      - Фокус: глубокая интерпретация, прогнозирование трендов        │
 │                                                                       │
-│   5. 社会公共热点事件分析报告模板 ⭐ (РЕКОМЕНДУЕМЫЙ ПО УМОЛЧАНИЮ)    │
+│   5. Social Public Hot Event Analysis Report Template ⭐ (РЕКОМЕНДУЕМЫЙ ПО УМОЛЧАНИЮ)│
 │      (Анализ социальных общественных событий)                        │
 │      - Использование: общественные горячие темы, культурные феномены │
 │      - Фокус: социальная психология, релевантность для организации  │
 │                                                                       │
-│   6. 突发事件与危机公关舆情报告模板                                      │
+│   6. Emergency Event and Crisis PR Public Opinion Report Template   │
 │      (Отчет о кризисном управлении)                                  │
 │      - Использование: breaking негативные события с потенциальным    │
 │        вредом для организации                                        │
@@ -1165,7 +1165,7 @@ OUTPUT: Профессиональный HTML-отчет (30 000+ слов)
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[综合分析] {query} - 深度舆情分析报告</title>
+    <title>[Comprehensive Analysis] {query} - In-Depth Public Opinion Analysis Report</title>
     
     <!-- Chart.js для графиков -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -1185,100 +1185,100 @@ OUTPUT: Профессиональный HTML-отчет (30 000+ слов)
     <div class="container">
         <!-- Заголовок -->
         <div class="header">
-            <h1>[综合分析] {query}</h1>
-            <p class="subtitle">深度舆情分析报告</p>
-            <p class="date">生成时间: 2025-03-17 10:30:00</p>
+            <h1>[Comprehensive Analysis] {query}</h1>
+            <p class="subtitle">In-Depth Public Opinion Analysis Report</p>
+            <p class="date">Generation Time: 2025-03-17 10:30:00</p>
         </div>
-        
+
         <!-- Оглавление (НЕ sidebar, а в начале статьи) -->
         <div class="toc">
-            <h2>目录</h2>
+            <h2>Table of Contents</h2>
             <ul>
-                <li><a href="#executive-summary">执行摘要</a></li>
-                <li><a href="#query-analysis">新闻分析 (QueryEngine)</a></li>
-                <li><a href="#media-analysis">多媒体分析 (MediaEngine)</a></li>
-                <li><a href="#insight-analysis">舆情分析 (InsightEngine)</a></li>
-                <li><a href="#forum-discussion">多智能体讨论</a></li>
-                <li><a href="#comprehensive">综合结论</a></li>
+                <li><a href="#executive-summary">Executive Summary</a></li>
+                <li><a href="#query-analysis">News Analysis (QueryEngine)</a></li>
+                <li><a href="#media-analysis">Multimedia Analysis (MediaEngine)</a></li>
+                <li><a href="#insight-analysis">Public Opinion Analysis (InsightEngine)</a></li>
+                <li><a href="#forum-discussion">Multi-Agent Discussion</a></li>
+                <li><a href="#comprehensive">Comprehensive Conclusion</a></li>
             </ul>
         </div>
         
         <!-- Резюме -->
         <div id="executive-summary" class="section">
-            <h2>执行摘要</h2>
+            <h2>Executive Summary</h2>
             <!-- Интегрированные ключевые находки от всех трех движков -->
         </div>
-        
+
         <!-- QueryEngine результаты -->
         <div id="query-analysis" class="section">
-            <h2>新闻分析视角 (QueryEngine)</h2>
+            <h2>News Analysis Perspective (QueryEngine)</h2>
             <!-- Контент от QueryEngine -->
-            
+
             <!-- График временной линии новостей -->
             <div class="chart-container">
                 <canvas id="newsTimelineChart"></canvas>
             </div>
         </div>
-        
+
         <!-- MediaEngine результаты -->
         <div id="media-analysis" class="section">
-            <h2>多媒体分析视角 (MediaEngine)</h2>
+            <h2>Multimedia Analysis Perspective (MediaEngine)</h2>
             <!-- Контент от MediaEngine -->
-            
+
             <!-- График распределения типов контента -->
             <div class="chart-container">
                 <canvas id="contentTypesChart"></canvas>
             </div>
         </div>
-        
+
         <!-- InsightEngine результаты -->
         <div id="insight-analysis" class="section">
-            <h2>公众舆情视角 (InsightEngine)</h2>
+            <h2>Public Opinion Perspective (InsightEngine)</h2>
             <!-- Контент от InsightEngine -->
-            
+
             <!-- Круговая диаграмма анализа эмоций -->
             <div class="chart-container">
                 <canvas id="sentimentChart"></canvas>
             </div>
         </div>
-        
+
         <!-- Дискуссия форума -->
         <div id="forum-discussion" class="section">
-            <h2>多智能体讨论记录</h2>
+            <h2>Multi-Agent Discussion Log</h2>
             <div class="forum-log">
                 <!-- Форматированный журнал дискуссий -->
                 <div class="speech insight">
                     <span class="speaker">INSIGHT:</span>
-                    <span class="content">根据社交媒体数据...</span>
+                    <span class="content">According to social media data...</span>
                     <span class="timestamp">10:30:15</span>
                 </div>
                 <div class="speech media">
                     <span class="speaker">MEDIA:</span>
-                    <span class="content">从多媒体内容来看...</span>
+                    <span class="content">From multimedia content perspective...</span>
                     <span class="timestamp">10:30:45</span>
                 </div>
                 <div class="speech query">
                     <span class="speaker">QUERY:</span>
-                    <span class="content">新闻报道显示...</span>
+                    <span class="content">News reports show...</span>
                     <span class="timestamp">10:31:10</span>
                 </div>
                 <div class="speech host">
                     <span class="speaker">HOST:</span>
-                    <span class="content">综合各位的发言...</span>
+                    <span class="content">Synthesizing everyone's remarks...</span>
                     <span class="timestamp">10:31:40</span>
                 </div>
             </div>
         </div>
-        
+
         <!-- Комплексные выводы -->
         <div id="comprehensive" class="section">
-            <h2>综合结论与建议</h2>
+            <h2>Comprehensive Conclusions and Recommendations</h2>
             <!-- Интегрированные выводы -->
         </div>
-        
+
         <!-- Приложение данных -->
         <div class="appendix">
-            <h2>数据附录</h2>
+            <h2>Data Appendix</h2>
             <!-- Детальные данные, таблицы, источники -->
         </div>
     </div>
@@ -1290,7 +1290,7 @@ OUTPUT: Профессиональный HTML-отчет (30 000+ слов)
         new Chart(sentimentCtx, {
             type: 'pie',
             data: {
-                labels: ['非常正面', '正面', '中性', '负面', '非常负面'],
+                labels: ['Very Positive', 'Positive', 'Neutral', 'Negative', 'Very Negative'],
                 datasets: [{
                     data: [20, 45, 20, 10, 5],
                     backgroundColor: ['#4CAF50', '#8BC34A', '#FFC107', '#FF9800', '#F44336']
